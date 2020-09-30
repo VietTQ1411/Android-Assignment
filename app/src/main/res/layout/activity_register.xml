@@ -7,6 +7,7 @@
     tools:context=".LoginServiceScreen.RegisterActivity">
 
     <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/appCompatImageView"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:src="@mipmap/magic" />
@@ -14,7 +15,7 @@
 
     <LinearLayout
         android:id="@+id/linearLayout"
-        android:layout_width="320dp"
+        android:layout_width="370dp"
         android:layout_height="wrap_content"
         android:layout_margin="10dp"
         android:layout_marginTop="120dp"
@@ -27,7 +28,7 @@
         app:layout_constraintVertical_bias="0.392">
 
         <EditText
-            android:id="@+id/editTextTextPersonName2"
+            android:id="@+id/txtUserNameRegister"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="10dp"
@@ -43,7 +44,7 @@
             android:textColorLink="#FFFFFF" />
 
         <EditText
-            android:id="@+id/editTextTextPersonName"
+            android:id="@+id/txtEmailRegister"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="10dp"
@@ -59,7 +60,7 @@
             android:textColorLink="#FFFFFF" />
 
         <EditText
-            android:id="@+id/editTextTextPersonName3"
+            android:id="@+id/txtPasswordRegister"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="10dp"
@@ -75,7 +76,7 @@
             android:textColorLink="#FFFFFF" />
 
         <EditText
-            android:id="@+id/editTextTextPersonName4"
+            android:id="@+id/txtRePasswordRegister"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="10dp"
@@ -103,7 +104,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/imageView" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/lbContent"
@@ -118,25 +119,28 @@
         app:layout_constraintTop_toBottomOf="@+id/lbName" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/btnContinueRegister"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="44dp"
-        android:text="Continue"
         android:padding="15dp"
-        app:layout_constraintEnd_toStartOf="@+id/button2"
+        android:text="Continue"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toStartOf="@+id/btnReturnLogin"
         app:layout_constraintHorizontal_bias="0.587"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/btnReturnLogin"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="44dp"
         android:layout_marginEnd="96dp"
-        android:text="Login"
         android:padding="15dp"
+        android:text="Login"
+        android:textSize="20dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
