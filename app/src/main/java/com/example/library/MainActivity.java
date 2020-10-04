@@ -11,8 +11,8 @@ import android.widget.EditText;
 import android.widget.TextView;
 
 import com.example.library.LoginServiceScreen.RegisterActivity;
-import com.example.library.UserScreen1.US1MainActivity;
 import com.example.library.ConmonInterface.IActivity;
+import com.example.library.UserScreen1.US1MainActivity;
 
 public class MainActivity extends Activity implements IActivity {
     private EditText txtUserName;
