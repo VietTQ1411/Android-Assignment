@@ -1,4 +1,4 @@
-package com.example.library.UserScreen1;
+package com.example.library.UserScreen;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.navigation.NavController;
@@ -6,18 +6,17 @@ import androidx.navigation.Navigation;
 import androidx.navigation.ui.AppBarConfiguration;
 import androidx.navigation.ui.NavigationUI;
 
-import android.app.Activity;
 import android.os.Bundle;
 
 import com.example.library.R;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
-public class US1MainActivity extends AppCompatActivity {
+public class USMainActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_u_s1_main);
+        setContentView(R.layout.activity_u_s_main);
         BottomNavigationView navView = findViewById(R.id.nav_view);
         // Passing each menu ID as a set of Ids because each
         // menu should be considered as top level destinations.

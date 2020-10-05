@@ -12,7 +12,7 @@ import android.widget.TextView;
 
 import com.example.library.LoginServiceScreen.RegisterActivity;
 import com.example.library.ConmonInterface.IActivity;
-import com.example.library.UserScreen1.US1MainActivity;
+import com.example.library.UserScreen.USMainActivity;
 
 public class MainActivity extends Activity implements IActivity {
     private EditText txtUserName;
@@ -87,7 +87,7 @@ public class MainActivity extends Activity implements IActivity {
                     txtPassword.requestFocus();
                 }else{
                     //Call API check username and password
-                    Intent intent = new Intent(MainActivity.this, US1MainActivity.class);
+                    Intent intent = new Intent(MainActivity.this, USMainActivity.class);
                     MainActivity.this.startActivity(intent);
                 }
             }

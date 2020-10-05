@@ -1,4 +1,4 @@
-package com.example.library.UserScreen1.ui.notifications;
+package com.example.library.UserScreen.ui.notifications;
 
 import androidx.lifecycle.LiveData;
 import androidx.lifecycle.MutableLiveData;

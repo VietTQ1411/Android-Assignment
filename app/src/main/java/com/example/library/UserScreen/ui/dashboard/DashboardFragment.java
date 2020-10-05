@@ -1,4 +1,4 @@
-package com.example.library.UserScreen1.ui.dashboard;
+package com.example.library.UserScreen.ui.dashboard;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
