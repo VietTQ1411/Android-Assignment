@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <!--
+        Database
+    -->
     <string name="DATABASE_NAME">BOOKS</string>
     <integer name="DATABASE_VERSION">1</integer>
     <string name="TABLE_NAME">USER</string>
@@ -8,4 +11,16 @@
     <string name="COLUMN_TOKEN_KEY">TOKEN_KEY</string>
     <string name="COLUMN_IS_LOGGING">IS_LOGGED</string>
 
+    <!--
+         Error Message
+     -->
+
+    <string name="invalidUsername">Username is not valid</string>
+    <string name="invalidPassword">Password is not valid</string>
+
+    <!--
+        API common
+    -->
+    <string name="HOST_NAME"> 192.168.1.142 </string>
+    <string name="PORT"> 3000 </string>
 </resources>

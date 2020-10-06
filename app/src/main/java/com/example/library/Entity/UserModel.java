@@ -1,16 +1,61 @@
 package com.example.library.Entity;
 
-public class UserModel {
-    private int id;
-    private String userName;
-    private String tokenKey;
-    private boolean isLogging;
+import java.util.Date;
 
-    public UserModel(int id, String userName, String tokenKey, boolean isLogging) {
+/**
+ *
+ */
+public class UserModel {
+    /**
+     *
+     */
+    private int id;
+
+    /**
+     *
+     */
+    private String email;
+
+    /**
+     *
+     */
+    private String name;
+
+    /**
+     *
+     */
+    private String hashedPassword;
+
+    /**
+     *
+     */
+    private String tokenKey;
+
+    /**
+     *
+     */
+    private String phoneNumber;
+
+    /**
+     *
+     */
+    private Date expiredDate;
+
+    /**
+     *
+     */
+    private String userType;
+
+    public UserModel(int id, String email, String name, String hashedPassword, String tokenKey,
+                     String phoneNumber, Date expiredDate, String userType) {
         this.id = id;
-        this.userName = userName;
+        this.email = email;
+        this.name = name;
+        this.hashedPassword = hashedPassword;
         this.tokenKey = tokenKey;
-        this.isLogging = isLogging;
+        this.phoneNumber = phoneNumber;
+        this.expiredDate = expiredDate;
+        this.userType = userType;
     }
 
     public int getId() {
@@ -21,12 +66,28 @@ public class UserModel {
         this.id = id;
     }
 
-    public String getUserName() {
-        return userName;
+    public String getEmail() {
+        return email;
     }
 
-    public void setUserName(String userName) {
-        this.userName = userName;
+    public void setEmail(String email) {
+        this.email = email;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public String getHashedPassword() {
+        return hashedPassword;
+    }
+
+    public void setHashedPassword(String hashedPassword) {
+        this.hashedPassword = hashedPassword;
     }
 
     public String getTokenKey() {
@@ -37,11 +98,27 @@ public class UserModel {
         this.tokenKey = tokenKey;
     }
 
-    public boolean isLogging() {
-        return isLogging;
+    public String getPhoneNumber() {
+        return phoneNumber;
     }
 
-    public void setLogging(boolean logging) {
-        isLogging = logging;
+    public void setPhoneNumber(String phoneNumber) {
+        this.phoneNumber = phoneNumber;
+    }
+
+    public Date getExpiredDate() {
+        return expiredDate;
+    }
+
+    public void setExpiredDate(Date expiredDate) {
+        this.expiredDate = expiredDate;
+    }
+
+    public String getUserType() {
+        return userType;
+    }
+
+    public void setUserType(String userType) {
+        this.userType = userType;
     }
 }

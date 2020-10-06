@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <string name="invalidUsername">Username is not valid</string>
-    <string name="invalidPassword">Password is not valid</string>
-
-</resources>
