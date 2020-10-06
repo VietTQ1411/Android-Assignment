@@ -47,8 +47,8 @@ public class Database {
                 String user = cursor.getString(cursor.getColumnIndexOrThrow(App.getInstance().getResources().getString(R.string.COLUMN_USER)));
                 String tokenKey = cursor.getString(cursor.getColumnIndexOrThrow(App.getInstance().getResources().getString(R.string.COLUMN_TOKEN_KEY)));
                 boolean isLogged = cursor.getInt(cursor.getColumnIndexOrThrow(App.getInstance().getResources().getString(R.string.COLUMN_IS_LOGGING))) == 1;
-                UserModel foundUser = new UserModel(id,user, tokenKey, isLogged);
-                return foundUser;
+               // UserModel foundUser = new UserModel(id,user, tokenKey, isLogged);
+                return null;
             }
 
             return null;

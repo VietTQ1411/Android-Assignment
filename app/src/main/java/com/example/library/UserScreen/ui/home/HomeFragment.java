@@ -10,7 +10,9 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
+import androidx.lifecycle.LifecycleOwner;
 import androidx.lifecycle.Observer;
+import androidx.lifecycle.ViewModelProvider;
 import androidx.lifecycle.ViewModelProviders;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
@@ -19,9 +21,13 @@ import com.example.library.ConmonInterface.IActivity;
 import com.example.library.Entity.BookModel;
 import com.example.library.R;
 import com.example.library.UserScreen.ui.home.adapters.BookAdapter;
+import com.example.library.viewModel.BookActivityViewModel;
+
+import java.util.List;
 
 public class HomeFragment extends Fragment {
     private RecyclerView bookRecyclerView;
+    private BookActivityViewModel booksActivityViewModel;
     private RecyclerView.Adapter recyclerViewAdapter;
     private HomeViewModel homeViewModel;
 
@@ -48,9 +54,21 @@ public class HomeFragment extends Fragment {
                 getActivity().getApplicationContext(),
                 RecyclerView.VERTICAL,false);
         bookRecyclerView.setLayoutManager(layoutManager);
-        BookAdapter bookAdapter = new BookAdapter(
+        booksActivityViewModel = (new ViewModelProvider(this))
+                .get(BookActivityViewModel.class);
+        booksActivityViewModel.init();
+
+        final BookAdapter bookAdapter = new BookAdapter(
                 getActivity(),
                 BookModel.generateFakeBooks()
+        );
+        booksActivityViewModel.getBooks().observe((LifecycleOwner) view,
+                new Observer<List<BookModel>>() {
+                    @Override
+                    public void onChanged(List<BookModel> books) {
+                        bookAdapter.notifyDataSetChanged();
+                    }
+                }
         );
         bookRecyclerView.setAdapter(bookAdapter);
     }
