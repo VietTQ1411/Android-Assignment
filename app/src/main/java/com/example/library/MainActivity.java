@@ -10,9 +10,9 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 
-import com.example.library.LoginServiceScreen.RegisterActivity;
-import com.example.library.ConmonInterface.IActivity;
-import com.example.library.UserScreen.USMainActivity;
+import com.example.library.UI.LoginServiceScreen.RegisterActivity;
+import com.example.library.Common.ConmonInterface.IActivity;
+import com.example.library.UI.UserScreen.USMainActivity;
 
 public class MainActivity extends Activity implements IActivity {
     private EditText txtUserName;

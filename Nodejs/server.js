@@ -6,7 +6,7 @@ app.use(bodyParser.urlencoded({ extended: false }))
 app.use(bodyParser.json())
 
 var { fakeBooks } = require('./fakeData')
-app.get('/', function(req, res) {
+app.get('/books', function(req, res) {
     res.json({
         result: "ok",
         data: fakeBooks
