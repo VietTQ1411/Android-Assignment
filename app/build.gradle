@@ -45,7 +45,8 @@ dependencies {
     annotationProcessor 'org.projectlombok:lombok:1.18.12'
     implementation 'com.squareup.picasso:picasso:2.71828'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
-    implementation 'com.squareup.okhttp3:okhttp:4.3.1'
+    implementation("com.squareup.okhttp3:okhttp:4.9.0")
+    implementation 'org.conscrypt:conscrypt-android:2.4.0'
     def lifecycle_version = "2.2.0"
     def arch_version = "2.1.0"
 

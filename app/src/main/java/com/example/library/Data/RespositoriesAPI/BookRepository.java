@@ -64,8 +64,9 @@ public class BookRepository {
         call.enqueue(new Callback() {
             @Override
             public void onResponse(@NotNull Call call, @NotNull Response response) throws IOException {
-                String jsonString = response.body().toString();
+
                 try {
+                    String jsonString = response.body().string();
                     JSONObject jsonObject = new JSONObject(jsonString);
                     JSONArray jsonArray = jsonObject.getJSONArray("data");
 
