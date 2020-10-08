@@ -38,4 +38,8 @@ public class BookAdapter extends RecyclerView.Adapter<BookItemView> {
     public int getItemCount() {
         return this.books.size();
     }
+
+    public void setBooks(ArrayList<BookModel> books) {
+        this.books = books;
+    }
 }
