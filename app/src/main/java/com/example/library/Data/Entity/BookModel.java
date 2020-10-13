@@ -1,13 +1,11 @@
 package com.example.library.Data.Entity;
 
-import android.util.Log;
-
-import org.json.JSONException;
-import org.json.JSONObject;
-
 import lombok.Builder;
 import lombok.Data;
 
+/**
+ * Book Model
+ */
 @Data
 @Builder
 public class BookModel{

@@ -1,5 +1,8 @@
 package com.example.library.Common.ConmonInterface;
 
+/**
+ * Interface for Activity
+ */
 public interface IActivity {
 
     /**

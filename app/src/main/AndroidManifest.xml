@@ -17,7 +17,7 @@
         <activity android:name=".UI.LoginServiceScreen.ForgotPasswordActivity" />
         <activity android:name=".UI.LoginServiceScreen.RegisterActivity" />
         <activity android:name=".UI.UserScreen.USMainActivity" />
-        <activity android:name=".MainActivity">
+        <activity android:name=".LoginActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

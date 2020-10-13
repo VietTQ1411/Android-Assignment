@@ -10,7 +10,9 @@ import android.content.res.Resources;
 public class AppResources extends Application {
     private static Context context;
     private static Resources res;
-
+    /**
+     *  lấy ra Resources
+     */
     public static Resources getResourses() {
         if(res==null){
             res = context.getResources();

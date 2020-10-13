@@ -27,4 +27,6 @@
     -->
     <string name="HOST_NAME">10.1.33.17</string>
     <string name="PORT"> 3000 </string>
+    <string name="GET_BOOK">books</string>
+    <string name="USER_LOGIN">login</string>
 </resources>

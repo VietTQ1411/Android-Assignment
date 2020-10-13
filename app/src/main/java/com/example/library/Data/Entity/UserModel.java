@@ -6,7 +6,7 @@ import lombok.Builder;
 import lombok.Data;
 
 /**
- *
+ * User Model
  */
 @Data
 @Builder
@@ -14,41 +14,49 @@ public class UserModel {
     /**
      *
      */
-    private int id;
+    @Builder.Default
+    private int id = 0;
 
     /**
      *
      */
-    private String email;
+    @Builder.Default
+    private String email = "";
 
     /**
      *
      */
-    private String name;
+    @Builder.Default
+    private String name = "";
 
     /**
      *
      */
-    private String hashedPassword;
+    @Builder.Default
+    private String hashedPassword = "";
 
     /**
      *
      */
-    private String tokenKey;
+    @Builder.Default
+    private String tokenKey = "";
 
     /**
      *
      */
-    private String phoneNumber;
+    @Builder.Default
+    private String phoneNumber = "";
 
     /**
      *
      */
-    private Date expiredDate;
+    @Builder.Default
+    private Date expiredDate = new Date();
 
     /**
      *
      */
-    private String userType;
+    @Builder.Default
+    private String userType = "";
 
 }
