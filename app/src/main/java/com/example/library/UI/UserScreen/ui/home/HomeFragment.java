@@ -21,10 +21,20 @@ import com.example.library.Data.RespositoriesAPI.viewModel.BookActivityViewModel
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * User Home Screen
+ * Màn hình trang chủ user
+ */
 public class HomeFragment extends Fragment {
+    /**
+     * Hiển thị list books
+     */
     private RecyclerView bookRecyclerView;
+    /**
+     * Books Service
+     */
     private BookActivityViewModel booksActivityViewModel;
-    private RecyclerView.Adapter recyclerViewAdapter;
+  //  private RecyclerView.Adapter recyclerViewAdapter;
     private HomeViewModel homeViewModel;
 
     public View onCreateView(@NonNull LayoutInflater inflater,

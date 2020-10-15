@@ -11,6 +11,10 @@ import android.os.Bundle;
 import com.example.library.R;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
+/**
+ * User Main Screen
+ * màn hình chính cho user
+ */
 public class USMainActivity extends AppCompatActivity {
 
     @Override

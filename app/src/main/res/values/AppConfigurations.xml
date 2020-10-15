@@ -5,7 +5,7 @@
 -->
 <resources>
     <!--
-        Database
+        Database SQLite
     -->
     <string name="DATABASE_NAME">BOOKS</string>
     <integer name="DATABASE_VERSION">1</integer>

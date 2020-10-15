@@ -15,6 +15,7 @@ import androidx.lifecycle.ViewModelProvider;
 import androidx.lifecycle.ViewModelStoreOwner;
 import com.example.library.Data.Entity.UserModel;
 import com.example.library.Data.RespositoriesAPI.viewModel.LoginActivityViewModel;
+import com.example.library.UI.BookScreen.BookDetailActivity;
 import com.example.library.UI.LoginServiceScreen.RegisterActivity;
 import com.example.library.Common.ConmonInterface.IActivity;
 import com.example.library.UI.UserScreen.USMainActivity;
@@ -49,8 +50,8 @@ public class LoginActivity extends Activity implements IActivity {
         txtError = findViewById(R.id.txtError);
         lbRegister = findViewById(R.id.txtRegister);
         //check database
-        loginActivityViewModel = (new ViewModelProvider((ViewModelStoreOwner) this))
-                .get(LoginActivityViewModel.class);
+       // loginActivityViewModel = (new ViewModelProvider((ViewModelStoreOwner) this))
+       //        .get(LoginActivityViewModel.class);
     }
 
     private String getTxtUserName() {
@@ -114,16 +115,18 @@ public class LoginActivity extends Activity implements IActivity {
         btnLogin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if(!flag){
-                    txtError.setText(getResources().getString(R.string.invalidUsername));
-                    txtUserName.requestFocus();
-                }else if(txtPassword.getText().length() < 3){
-                    txtError.setText(getResources().getString(R.string.invalidPassword));
-                    txtPassword.requestFocus();
-                }else{
-                    //Call API check username and password
-                   LoginActivity.this.login();
-                }
+//                if(!flag){
+//                    txtError.setText(getResources().getString(R.string.invalidUsername));
+//                    txtUserName.requestFocus();
+//                }else if(txtPassword.getText().length() < 3){
+//                    txtError.setText(getResources().getString(R.string.invalidPassword));
+//                    txtPassword.requestFocus();
+//                }else{
+//                    //Call API check username and password
+//                   LoginActivity.this.login();
+//                }
+                Intent intent = new Intent(LoginActivity.this, BookDetailActivity.class);
+                LoginActivity.this.startActivity(intent);
             }
         });
         lbRegister.setOnClickListener(new View.OnClickListener() {
